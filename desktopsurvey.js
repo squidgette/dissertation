@@ -7,6 +7,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtr
     onRow: function(logName, log, settings, ctx){
         if (!ctx.logs) ctx.logs = [];
         ctx.logs.push(log);
+	    return ctx.log;
     },
     // onEnd trigger save (by returning a value)
     onEnd: function(name, settings, ctx){
